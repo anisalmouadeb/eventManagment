@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const url = 'http://localhost:5000/events';
+const url = 'https://merneventmanagment.herokuapp.com/events';
 
 export const fetchEvents = (page) => axios.get(`${url}?page=${page}`);
 export const fetchEvent = (id) => axios.get(`${url}/event/${id}`);

@@ -16,6 +16,10 @@ app.use(cors());
 
 //add prefix /events to all the routes
 app.use("/events", eventRoutes);
+
+app.get("/", (req, res) => {
+  res.send("APP IS RUNNING")
+})
 //image 
 const __dirname = path.resolve();
 console.log(__dirname)
